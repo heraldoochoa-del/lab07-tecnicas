@@ -72,18 +72,13 @@ AUTOCRÍTICA: Al terminar, revisa tu propia tabla y responde en una sección apa
 
 | Criterio | ¿Cumple? (Sí / No) |
 |----------|--------------------|
-| La respuesta usa exactamente el formato de tabla pedido | [Sí / No] |
-| Cubre los cuatro campos del formulario | [Sí / No] |
-| Incluye casos válidos, inválidos y límite | [Sí / No] |
-| Cada caso tiene un resultado esperado claro | [Sí / No] |
-| La autocrítica identifica al menos un caso faltante | [Sí / No] |
+| La respuesta usa exactamente el formato de tabla pedido | Sí |
+| Cubre los cuatro campos del formulario | Sí |
+| Incluye casos válidos, inválidos y límite | Sí |
+| Cada caso tiene un resultado esperado claro | Sí |
+| La autocrítica identifica al menos un caso faltante | Sí |
 
 ## Por que elegi estas tecnicas
 
-[Escribe un párrafo con tus propias palabras. Ideas para incluir: elegí role prompting porque la IA necesitaba un perfil concreto de QA para dar casos realistas; usé prompt estructurado porque la tarea tiene varias partes (contexto, reglas, formato) que se mezclaban en un solo párrafo; usé few-shot porque la versión 2 devolvía formatos distintos y un ejemplo es la forma más directa de fijarlo; usé descomposición para que cubriera cada campo y no solo los obvios; y usé autocrítica para que detectara lo que faltaba. No usé chain of thought explícito porque la tarea no requiere un razonamiento matemático o lógico largo, sino generar y organizar casos.]
+Elegí role prompting porque necesitaba que la IA adoptara la mentalidad de un QA enfocado en cobertura de pruebas. El prompt estructurado permitió separar claramente el contexto de las reglas y la tarea. Aplicar few-shot solucionó el problema de formato de la versión 2, obligando a la IA a seguir la estructura exacta de la tabla. Usé descomposición para forzar que la IA no se centrara solo en la contraseña, sino en todos los campos e interacciones del formulario. Finalmente, la autocrítica actuó como un filtro de calidad para capturar posibles escenarios olvidados antes de dar por terminada la respuesta.
 
-## Capturas
-
-![Respuesta de la IA al prompt final](capturas/respuesta-prompt-final.png)
-
-![Archivo TAREA.md renderizado en GitHub](capturas/tarea-github.png)
