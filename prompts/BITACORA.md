@@ -3,7 +3,6 @@
 Laboratorio 07: Tecnicas Avanzadas de Prompting.
 Herramienta de IA usada: Gemini
 
-## Ejercicio 2: Zero-shot, one-shot y few-shot
 
 ## Ejercicio 2: Zero-shot, one-shot y few-shot
 
